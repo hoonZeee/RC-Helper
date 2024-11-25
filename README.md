@@ -1,4 +1,11 @@
-# RC-Helper(루미큐브 승률 최적화 프로그램)
+# RC-Helper
+루미큐브 승률 최적화 프로그램
+--
+### 참조한 알고리즘
+   - Longest Increasing Subsequence
+   - Interval Scheduling
+   - Dynamic Programming(확장가능)
+
 --
 pip install -r requirements.txt
 
