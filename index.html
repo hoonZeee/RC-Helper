@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rummikub Helper</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div id="game-board">
+    <h1>Rummikub Helper</h1>
+
+    <!-- 최적화된 결과 표시 영역 -->
+    <div id="optimized-container">
+        <h2>Optimized Solution</h2>
+        <div id="optimized-result"></div>
+    </div>
+
+    <!-- 보드 입력 및 표시 영역 -->
+    <div id="board-container">
+        <h2>Board</h2>
+        <input type="text" id="board-input" placeholder="Enter board tiles (e.g., b9, b10, b11)">
+        <button onclick="updateBoard()">Add to Board</button>
+        <div id="board-groups"></div>
+    </div>
+
+    <!-- 내 손패 입력 및 표시 영역 -->
+    <div id="hand-container">
+        <h2>Your Hand</h2>
+        <input type="text" id="hand-input" placeholder="Enter your hand (e.g., r6, b5, y12, j)">
+        <button onclick="updateHand()">Set Hand</button>
+        <div id="hand-cards"></div>
+    </div>
+
+    <!-- 분석 버튼 -->
+    <div id="controls">
+        <button onclick="analyzeBoard()">Analyze</button>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* 기본 레이아웃 */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f5;
+}
+
+#game-board {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+/* 각 섹션 스타일 */
+#optimized-container, #board-container, #hand-container {
+    margin: 20px 0;
+}
+
+#optimized-result, #board-groups, #hand-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 그룹 스타일 */
+.board-group {
+    display: flex;
+    gap: 5px;
+}
+
+/* 타일 스타일 */
+.tile {
+    font-size: 1.2em;
+    width: 50px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+/* 색상별 스타일 */
+.tile.r { background-color: #e57373; }
+.tile.b { background-color: #64b5f6; }
+.tile.y { background-color: #ffd54f; color: #333; }
+.tile.k { background-color: #757575; }
+
+input[type="text"], button {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1em;
+}
