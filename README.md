@@ -1,5 +1,4 @@
 # RC-Helper
-루미큐브 승률 최적화 프로그램
 --
 pip install -r requirements.txt
 
