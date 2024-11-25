@@ -2,7 +2,7 @@
 --
 pip install -r requirements.txt
 
-###algorithm
+### algorithm
 1. 입력: 손패(hand), 보드(board)
    - 두 배열을 결합하여 combined_tiles 생성
    - combined_tiles에서 조커("j") 개수 계산 (joker_count)
